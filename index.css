@@ -12,7 +12,7 @@ body {
 
 .omellete-recipe {
   background-color: hsl(0, 0%, 100%);
-  width: 34.375rem;
+  width: 38.75rem;
   height: 200vh;
   border-radius: 2rem;
   margin: auto;
@@ -36,4 +36,36 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+.omellete-recipe .border-around .title-and-description h1 {
+  color: hsl(24, 5%, 18%);
+  font-size: 2rem;
+}
+.omellete-recipe .border-around .title-and-description p {
+  color: hsl(30, 10%, 34%);
+  font-size: 0.875rem;
+}
+.omellete-recipe .border-around .preparation-time {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 0.625rem;
+  height: 9.375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.omellete-recipe .border-around .preparation-time span {
+  color: hsl(332, 51%, 32%);
+  font-weight: 700;
+  font-family: "outfit", sans-serif;
+  padding-left: 1.25rem;
+}
+.omellete-recipe .border-around .preparation-time ul {
+  padding-top: 0.625rem;
+}
+.omellete-recipe .border-around .preparation-time ul li {
+  font-family: "outfit", sans-serif;
+  margin-left: 2.5rem;
+  font-size: 0.8125rem;
+  padding: 0.3125rem;
+  color: hsl(30, 10%, 34%);
 }/*# sourceMappingURL=index.css.map */

@@ -1,12 +1,12 @@
 // Preparations
 $white: hsl(0, 0%, 100%);
 $stone100:hsl(30, 54%, 90%);
-$Stone150: hsl(30, 18%, 87%);
-$Stone600: hsl(30, 10%, 34%);
-$Stone900: hsl(24, 5%, 18%);
-$Brown800: hsl(14, 45%, 36%);
-$Rose800: hsl(332, 51%, 32%);
-$Rose50: hsl(330, 100%, 98%);
+$stone150: hsl(30, 18%, 87%);
+$stone600: hsl(30, 10%, 34%);
+$stone900: hsl(24, 5%, 18%);
+$brown800: hsl(14, 45%, 36%);
+$rose800: hsl(332, 51%, 32%);
+$rose50: hsl(330, 100%, 98%);
 
 @function rem($value) {
     $remValue: ($value / 16) + rem; 
@@ -27,7 +27,7 @@ body{
 
 .omellete-recipe{
     background-color: $white;
-    width: rem(550);
+    width: rem(620);
     height: 200vh;
     // border: 1px solid red;
     border-radius: 2rem;
@@ -56,8 +56,42 @@ body{
                 flex-direction: column;
                 justify-content: space-evenly;
 
+                    h1{
+                        color: $stone900;
+                        font-size: rem(32)
+                    }
+                    p{
+                        color: $stone600;
+                        font-size: rem(14)
+
+                    }
+                }
+
+            .preparation-time{
+                background-color: $rose50;
+                border-radius: rem(10);
+                height: rem(150);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+
+                    span{
+                        color: $rose800;
+                        font-weight: 700;
+                        font-family: "outfit", sans-serif;
+                        padding-left: rem(20)
+
+                    }
+                    ul{
+                        padding-top: rem(10);
+                            li{
+                                font-family: "outfit", sans-serif;
+                                margin-left: rem(40);
+                                font-size: rem(13);
+                                padding: rem(5);
+                                color: $stone600;
+                    }}
             }
-
-
     }
 }
