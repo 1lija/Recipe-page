@@ -4,7 +4,36 @@
   box-sizing: border-box;
 }
 
-html {
-  width: 1440px;
-  height: 100vh;
+body {
+  background-color: hsl(30, 54%, 90%);
+  height: 220vh;
+  font-family: "Outfit", system-ui;
+}
+
+.omellete-recipe {
+  background-color: hsl(0, 0%, 100%);
+  width: 34.375rem;
+  height: 200vh;
+  border-radius: 2rem;
+  margin: auto;
+  margin-top: 6.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.omellete-recipe .border-around {
+  width: 90%;
+  height: 95%;
+}
+.omellete-recipe .border-around img {
+  width: 100%;
+  height: 15.625rem;
+  border-radius: 0.9375rem;
+}
+.omellete-recipe .border-around .title-and-description {
+  width: 100%;
+  height: 9.375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }/*# sourceMappingURL=index.css.map */

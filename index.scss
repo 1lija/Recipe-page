@@ -1,14 +1,63 @@
+// Preparations
+$white: hsl(0, 0%, 100%);
+$stone100:hsl(30, 54%, 90%);
+$Stone150: hsl(30, 18%, 87%);
+$Stone600: hsl(30, 10%, 34%);
+$Stone900: hsl(24, 5%, 18%);
+$Brown800: hsl(14, 45%, 36%);
+$Rose800: hsl(332, 51%, 32%);
+$Rose50: hsl(330, 100%, 98%);
+
+@function rem($value) {
+    $remValue: ($value / 16) + rem; 
+    @return $remValue;
+}
+// End of preparations
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
-    width: 1440px;
-    height: 100vh;
+body{
+    background-color: $stone100;    
+    height: 220vh;
+    font-family: "Outfit", system-ui;
 }
 
-body{
-    
+.omellete-recipe{
+    background-color: $white;
+    width: rem(550);
+    height: 200vh;
+    // border: 1px solid red;
+    border-radius: 2rem;
+    margin:auto;
+    margin-top: rem(100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .border-around{
+        width: 90%;
+        height: 95%;
+    // border: 1px solid red;
+
+            img{
+                width: 100%;
+                height: rem(250);
+                border-radius: rem(15);
+            }
+
+            .title-and-description{
+    // border: 1px solid red;
+
+                width: 100%;
+                height: rem(150);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+            }
+
+
+    }
 }
