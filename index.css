@@ -143,4 +143,15 @@ hr {
 }
 .omellete-recipe .border-around .nutrition table #last {
   border-bottom: none;
+}
+
+@media only screen and (max-width: 480px), (max-height: 320px) {
+  .omellete-recipe {
+    margin: 0;
+    border-radius: 0;
+  }
+  body {
+    height: -moz-max-content;
+    height: max-content;
+  }
 }/*# sourceMappingURL=index.css.map */
