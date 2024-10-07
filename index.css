@@ -85,4 +85,25 @@ body {
   color: hsl(30, 10%, 34%);
   font-size: 0.875rem;
   padding: 0.3125rem;
+}
+.omellete-recipe .border-around .instructions {
+  height: 19.375rem;
+  margin-top: 1.5625rem;
+}
+.omellete-recipe .border-around .instructions h1 {
+  color: hsl(14, 45%, 36%);
+  font-size: 1.5rem;
+}
+.omellete-recipe .border-around .instructions ol {
+  margin-top: 0.9375rem;
+  margin-left: 1.5625rem;
+}
+.omellete-recipe .border-around .instructions ol li {
+  color: hsl(30, 10%, 34%);
+  font-size: 0.875rem;
+  padding: 0.3125rem;
+}
+.omellete-recipe .border-around .instructions ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
 }/*# sourceMappingURL=index.css.map */

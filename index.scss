@@ -118,6 +118,30 @@ margin-top: rem(25);
     }
 }
 
+.instructions{
+    height: rem(310);
+// border: 1px solid blue;
+margin-top: rem(25);
+    h1{
+        color: $brown800;
+        font-size: rem(24);
+    }
+    ol{
+        margin-top: rem(15);
+        margin-left: rem(25);
+        
+        li{
+            color: $stone600;
+            font-size: rem(14);
+            padding: rem(5);
+            
+            &::marker{
+                color: $brown800;
+                font-weight: 700;
+            }
+        }
+    }
+}
 
     }
 }
