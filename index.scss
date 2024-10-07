@@ -2,34 +2,37 @@
 $white: hsl(0, 0%, 100%);
 $stone100:hsl(30, 54%, 90%);
 $stone150: hsl(30, 18%, 87%);
-$stone600: hsl(30, 10%, 34%);
+$stone600: hsl(30, 6%, 49%);
 $stone900: hsl(24, 5%, 18%);
 $brown800: hsl(14, 45%, 36%);
 $rose800: hsl(332, 51%, 32%);
 $rose50: hsl(330, 100%, 98%);
 
 @function rem($value) {
-    $remValue: ($value / 16) + rem; 
-    @return $remValue;
+    @return  ($value / 16) + rem; ;
 }
-// End of preparations
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Outfit", sans-serif;
-
+    
 }
+// End of preparations
 
 body{
     background-color: $stone100;    
     height: 220vh;
 }
 
+hr{
+    border-color: $stone600;
+}
+
 .omellete-recipe{
     background-color: $white;
     width: rem(620);
-    height: 200vh;
+    height: 150vh;
     // border: 1px solid red;
     border-radius: 2rem;
     margin:auto;
@@ -39,13 +42,14 @@ body{
     align-items: center;
     .border-around{
         width: 90%;
-        height: 70%;
-    //     display:flex;
-    //     flex-direction: column;
-    //     justify-content: space-between;
-    // border: 3px solid red;
+        height: 95%;
+        // display:flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+    // border: 1px solid red;
 
             img{
+                
                 width: 100%;
                 height: rem(250);
                 border-radius: rem(15);
@@ -141,6 +145,48 @@ margin-top: rem(25);
             }
         }
     }
+}
+
+.nutrition{
+margin-top: rem(25);
+
+    h1{
+        font-size: rem(24);
+        color: $brown800;
+    }
+    p{
+        color: $stone600;
+        font-size: rem(14);
+        margin-top: rem(20);
+        margin-bottom: rem(20);
+    }
+
+    table{
+        border-collapse:collapse;
+        // border: 1px solid black;
+        width: 100%;
+        tr{
+            height: rem(30);
+            border-bottom: 1pt solid $stone600;
+            
+        }
+
+        td{
+            color: $stone600;
+            font-size: rem(14);
+
+        }
+        #value{
+            color: $brown800;
+            font-weight: 700;
+            font-size: rem(16);
+        }
+        #last{
+            border-bottom: none;
+        }
+
+    }
+
 }
 
     }
