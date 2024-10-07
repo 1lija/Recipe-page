@@ -9,7 +9,7 @@ $rose800: hsl(332, 51%, 32%);
 $rose50: hsl(330, 100%, 98%);
 
 @function rem($value) {
-    @return  ($value / 16) + rem; ;
+    @return  ($value / 16) + rem;
 }
 *{
     margin: 0;
@@ -22,7 +22,7 @@ $rose50: hsl(330, 100%, 98%);
 
 body{
     background-color: $stone100;    
-    height: 220vh;
+    height: 115rem;
 }
 
 hr{
@@ -32,8 +32,7 @@ hr{
 .omellete-recipe{
     background-color: $white;
     width: rem(620);
-    height: 150vh;
-    // border: 1px solid red;
+    height: 90rem;
     border-radius: 2rem;
     margin:auto;
     margin-top: rem(100);
@@ -43,12 +42,8 @@ hr{
     .border-around{
         width: 90%;
         height: 95%;
-        // display:flex;
-        // flex-direction: column;
-        // justify-content: space-between;
-    // border: 1px solid red;
 
-            img{
+        img{
                 
                 width: 100%;
                 height: rem(250);
@@ -56,7 +51,6 @@ hr{
             }
 
 .title-and-description{
-    // border: 1px solid red;
 
                 width: 100%;
                 height: rem(150);
@@ -104,7 +98,6 @@ hr{
 
 .ingredients{
 height: rem(220);
-// border: 1px solid blue;
 margin-top: rem(25);
     h1{
         color: $brown800;
@@ -124,8 +117,7 @@ margin-top: rem(25);
 
 .instructions{
     height: rem(310);
-// border: 1px solid blue;
-margin-top: rem(25);
+    margin-top: rem(25);
     h1{
         color: $brown800;
         font-size: rem(24);
@@ -148,7 +140,7 @@ margin-top: rem(25);
 }
 
 .nutrition{
-margin-top: rem(25);
+    margin-top: rem(25);
 
     h1{
         font-size: rem(24);
@@ -163,7 +155,6 @@ margin-top: rem(25);
 
     table{
         border-collapse:collapse;
-        // border: 1px solid black;
         width: 100%;
         tr{
             height: rem(30);
